@@ -4,7 +4,7 @@ public class Primitives {
         char letter = 'P';
         float marks = 12.23f;
         double largeDecimalNumbers = 873278328323232.3323;
-        long largeIntegerValues = 22222222244444444l;
-
+        long largeIntegerValues = 22222222244444444L;
+        boolean check = false;
     }
 }
