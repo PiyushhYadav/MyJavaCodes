@@ -9,6 +9,5 @@ public class Subtract {
         System.out.println("Enter a number: ");
         int n = in.nextInt();
 
-
     }
 }
