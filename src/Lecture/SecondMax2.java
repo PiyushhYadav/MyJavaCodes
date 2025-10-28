@@ -20,9 +20,17 @@ public class SecondMax2 {
         int maxi = Integer.MIN_VALUE;
         int smax = Integer.MIN_VALUE;
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > maxi) {
+                smax = maxi;
+                maxi = arr[i];
+            }
 
+            else if (arr[i] < maxi && arr[i] > smax) {
+                smax = arr[i];
+            }
         }
-
+        System.out.println("Maximum Element is: " + maxi);
+        System.out.println("Second maximum Element is: " + smax);
     }
 }

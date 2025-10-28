@@ -1,30 +1,19 @@
 package Lecture;
 
 import java.util.Scanner;
-
+//Print digits of a number
 public class Args {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        System.out.print("Enter the value of n: ");
-        int n = in.nextInt();
+        System.out.print("Enter the number: ");
+        int num = in.nextInt();
 
-        int sp = n-1 ; //space
-        int st = 1; //star
+        while (num != 0) {
+            int rem = num % 10;
+        System.out.println(rem);
 
-        for (int i = 1; i <= n; i++) {
-
-            for (int j = 1; j <= sp; j++) {
-                System.out.print("\t");
-            }
-
-            for (int k = 1; k <= st; k++) {
-                System.out.print("*\t");
-            }
-
-            sp--;
-            st++;
-            System.out.println();
+        num = num / 10;
         }
 
     }
